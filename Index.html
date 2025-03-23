@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriz Dinamica</title>
+    <script src="MatrizesDinamicas.js"></script>
+    <link rel="stylesheet" href="StyleMatrizesDinamicas.css">
+</head>
+
+<body>
+    <div class="FocusBoard">
+        <div class="Title">Matrizes Dinâmicas</div>
+        <span>Selecione a dimensão da Matriz:</span>
+        <div id="Form">
+            <form action="MatrizesDinamicas.php" method="post" id="Formulario">
+                <input type="number" name="QuantidadeLinhas" id="InputLinha" min="1" value="1" autocomplete="off">
+                X
+                <input type="number" name="QuantidadeColunas" id="InputColuna" min="1" value="1" autocomplete="off">
+                <input type="button" value="+" id="BotaoGerar" onclick="GerarCamposMatriz()">
+                <div id="GenerateFormBoard"></div>
+                <div id="ButtonsBoard">
+                </div>
+                <input type="hidden" name="Variavel" id="Variavel">
+            </form>
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>
