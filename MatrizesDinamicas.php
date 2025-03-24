@@ -118,7 +118,7 @@ foreach ($Matriz as $chave => $valor) {
 echo " <span>Matriz Original * " . $VariavelEscalar . ": <table border='1'></span>";
 for ($numeroLinha = 1; $numeroLinha <= $QuantidadeLinhas; $numeroLinha++) {
     echo "<tr>";
-    for ($numeroColuna = 1; $numeroColuna <= $QuantidadeColunasTransposta; $numeroColuna++) {
+    for ($numeroColuna = 1; $numeroColuna <= $QuantidadeColunas; $numeroColuna++) {
         echo "<td>" . $MatrizMultiplicada[$numeroLinha][$numeroColuna];
     }
     echo "</tr>";
