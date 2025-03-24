@@ -44,6 +44,9 @@ function ChecarStatusBotoes(Verdade, IdBotao) {
    if (IdBotao == "BotaoGerar") {
       var BotaoGerar = document.getElementById(IdBotao)
       BotaoGerar.disabled = !Verdade
+      document.getElementById("InputLinha").disabled = !Verdade;
+      document.getElementById("InputColuna").disabled = !Verdade;
+      BotaoGerar.disabled = !Verdade
    }
 
 }
