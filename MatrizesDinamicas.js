@@ -2,7 +2,7 @@
 function GerarCamposMatriz() {
    var Verdade = false
    const IdBotao = ("BotaoGerar");
-   ChecarStatusBotoes(Verdade, IdBotao);
+   ChecarStatus(Verdade, IdBotao);
    var ReferenciaLinha = 1;
    var ReferenciaColuna = 1;
 
@@ -29,7 +29,6 @@ function LimparTela() {
    const IdBotaoLimpar = ("BotaoLimpar");
    const idBotaoEnviar = ("BotaoEnviar");
    var ElementosAlvos = document.querySelectorAll(LocalClasseAlvo);
-
    for (let Elements = 0; Elements < ElementosAlvos.length; Elements++) {
       ElementosAlvos[Elements].remove();
    }
@@ -37,16 +36,21 @@ function LimparTela() {
    document.getElementById(idBotaoEnviar).remove();
    document.getElementById(IdBotaoLimpar).remove();
    Verdade = true;
-   ChecarStatusBotoes(Verdade, "BotaoGerar")
+   ChecarStatus(Verdade, "BotaoGerar")
 }
 
-function ChecarStatusBotoes(Verdade, IdBotao) {
+function ChecarStatus(Verdade, IdBotao) {
    if (IdBotao == "BotaoGerar") {
-      var BotaoGerar = document.getElementById(IdBotao)
-      BotaoGerar.disabled = !Verdade
+      document.getElementById(IdBotao).disabled = !Verdade
       document.getElementById("InputLinha").disabled = !Verdade;
       document.getElementById("InputColuna").disabled = !Verdade;
-      BotaoGerar.disabled = !Verdade
+   }
+   if(IdBotao=='BotaoEnviar'){
+      document.getElementById("InputLinha").disabled = !Verdade;
+      document.getElementById("InputColuna").disabled = !Verdade;
+      
+      
+
    }
 
 }
@@ -56,7 +60,7 @@ function ChecarCampos() {
    const IdFormulario = "Formulario";
    var CamposVazios = 0;
    var QuantidadeCampos = document.querySelectorAll(ClasseCampos);
-
+   
 
    for (let CampoValor = 1; CampoValor <= QuantidadeCampos.length; CampoValor++) {
       var CampoAtual = document.getElementById(`Input${CampoValor}`).value
@@ -74,7 +78,10 @@ function ChecarCampos() {
       var VariavelEscalar = parseFloat(prompt("Insira um número Real: "));
       document.getElementById("Variavel").value = VariavelEscalar;
       if (document.getElementById("Variavel").value != 'NaN') {
-         document.getElementById(IdFormulario).submit();
+         Verdade=true;
+         ChecarStatus(Verdade, "BotaoEnviar")
+        document.getElementById(IdFormulario).submit();
+        LimparTela();
       }
 
    }
