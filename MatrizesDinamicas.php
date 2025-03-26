@@ -1,3 +1,4 @@
+
 <?php
 $Matriz = array();
 $Linha = 1;
@@ -18,6 +19,7 @@ foreach ($_POST as $chave => $valor) {
         $VariavelEscalar = intval($valor);
     }
 }
+
 $QuantidadeCampos = $QuantidadeColunas * $QuantidadeLinhas;
 for ($campos = 1; $campos <= $QuantidadeCampos; $campos++) {
     if ($Coluna > $QuantidadeColunas) {
@@ -109,6 +111,7 @@ for ($numeroLinha = 1; $numeroLinha <= $QuantidadeLinhas; $numeroLinha++) {
 echo "</table><br>";
 
 #Multiplicação de um número real pela Matriz Original
+
 $MatrizMultiplicada = array();
 foreach ($Matriz as $chave => $valor) {
     foreach ($valor as $elemento => $val) {
