@@ -10,25 +10,28 @@
 </head>
 
 <body>
-    <div class="FocusBoard">
-        <div class="Title">Matrizes Dinâmicas</div>
-        <span>Selecione a dimensão da Matriz:</span>
-        <div id="Form">
-            <form action="MatrizesDinamicas.php" method="post" id="Formulario">
-                <input type="number" name="QuantidadeLinhas" id="InputLinha" min="1" value="1" autocomplete="off">
-                X
-                <input type="number" name="QuantidadeColunas" id="InputColuna" min="1" value="1" autocomplete="off">
-                <input type="button" value="+" id="BotaoGerar" onclick="GerarCamposMatriz()">
-                <div id="GenerateFormBoard"></div>
-                <div id="ButtonsBoard">
-                </div>
-                <input type="hidden" name="Variavel" id="Variavel">
-            </form>
-            
+    <div class="container">
+        <div class="FocusBoard">
+            <div class="Title">Matrizes Dinâmicas</div>
+            <div class="SubTitle">Selecione a dimensão da Matriz:</div>
+            <div class="Form">
+                <form action="MatrizesDinamicas.php" method="post" id="Formulario">
+                    <input type="number" name="QuantidadeLinhas" id="InputLinha" min="1" value="1" autocomplete="off">
+                    X
+                    <input type="number" name="QuantidadeColunas" id="InputColuna" min="1" value="1" autocomplete="off">
+                    <input type="button" value="gerar" id="BotaoGerar" onclick="GerarCamposMatriz()">
+                    <div id="BorderMid">
+                        <div id="GenerateFormBoard"></div>
+                        <div id="ButtonsBoard"></div>
+                        <input type="hidden" name="Variavel" id="Variavel">
+                    </div>
+
+                </form>
+
+            </div>
         </div>
-
-
     </div>
 </body>
+
 
 </html>
