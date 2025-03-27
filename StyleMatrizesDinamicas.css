@@ -1,90 +1,182 @@
+::-webkit-scrollbar-track {
+   background-color: transparent;
+}
+
+::-webkit-scrollbar {
+   width: 5px;
+   background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+   background: #87f8f627;
+
+}
+
+@media screen and (min-width: 768px) {
+   html {
+      font-size: 18px;
+   }
+}
+
 body {
-   background: #282a36;
+   color: #d4fcfc;
+   margin: 0px;
+   background-color: #eeecfe;
+
+
+}
+
+.container {
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
    align-items: center;
-   color: #50c176;
 }
 
 .FocusBoard {
-   display: flex;
-   flex-direction: column;
-   height: fit-content;
-   width: 100%;
-   margin-top: 3.5%;
+   width: 400px;
+   height: 450px;
+   background: #011112;
+   box-shadow: 0 8px 32px 0 #011213;
+   border-radius: 25px;
+
 
 
 }
+
 
 .FocusBoard .Title {
    font-family: Georgia, 'Times New Roman', Times, serif;
-   color: #f0d957;
-   font-size: 1.5rem;
-   border-right: 2.5px solid #cb78a3;
+   color: #87f8f6;
+   font-size: 2rem;
    width: 14.5ch;
+   justify-self: center;
+   border-right: 2.5px solid #87f8f6;
    overflow: hidden;
    white-space: nowrap;
    animation: piscarCursor infinite 0.5s;
-   align-self: center;
-   margin-bottom: 2.5%;
+   margin-top: 20px;
+
 }
 
-.FocusBoard span {
+.FocusBoard .SubTitle {
+   width: fit-content;
    font-family: Georgia, 'Times New Roman', Times, serif;
-   color: #f773ad;
-   width: auto;
-   align-self: center;
-   margin-bottom: 1.5%;
+   font-size: 1rem;
+   color: #2c54f2;
+   justify-self: center;
+   padding: 15px 0px 0px 0px;
+
+
 }
 
-#Form {
-   align-self: center;
-}
-
-#Form #BotaoGerar {
-   height: 20.63px;
-   width: 5ch;
-   background-color: #f773ad;
-   color: white;
-   border: #bd93f9 double 0.5px;
-   border-radius: 25px;
-}
-#Form #BotaoGerar:hover{
-   background-color:#8cc2d2;
-   border-color: #9adce2;
-   color:whitesmoke;
-   
-}
-#Form #BotaoGerar:disabled{
-   background-color:gray;
-   border-color: grey;
-   color:black;
-   
-}
-
-#Form #ButtonsBoard{
+.Form {
    width: 100%;
+   height: 75%;
+   justify-items: center;
    text-align: center;
+   overflow: hidden;
+   padding: 15px 0px 0px 0px;
 
 }
-#Form #ButtonsBoard input {
-   height: 20.63px;
-   width: 10ch;
-   background-color: #f773ad;
-   color: white;
-   border: #ff9cc7 solid 0.5px;
-   border-radius: 25px;
-   text-align: center;
+
+#Formulario {
+   height: 100%;
+   width: 100%;
 
 }
-#Form #ButtonsBoard input:hover{
-   background-color:#8cc2d2;
-   border-color: #9adce2;
-   color:whitesmoke;
+
+#BorderMid {
+   margin-top: 10px;
+   height: 87%;
+   width: 100%;
+   overflow: auto;
+   border-top: #87f8f6 solid 1px;
+   border-top-left-radius: 25px;
+   border-top-right-radius: 25px;
+
+
+
+
 }
-#Form input {
+
+.Form input {
    width: 120px;
-   height: 15px;
+   height: 20px;
    border-radius: 25px;
-   margin-bottom: 15px;
+   border: black solid 1px;
+}
+
+.Form #BotaoGerar {
+   height: 20px;
+   width: auto;
+   font-family: 'Roboto', sans-serif;
+   font-size: 0.5rem;
+   text-transform: uppercase;
+   letter-spacing: 2.5px;
+   font-weight: 500;
+   background-color: #0a3ba3;
+   color: #d4fcfc;
+   border: none;
+   border-radius: 45px;
+   box-shadow: 0px 8px 15px #2c54f20e;
+   transition: all 0.3s ease 0s;
+   cursor: pointer;
+   outline: none;
+}
+
+.Form #BotaoGerar:hover {
+   background-color: #2c54f2;
+   box-shadow: 0px 15px 20px #87f8f61f;
+   color: white;
+   transform: translateY(-7px);
+}
+
+.Form #BotaoGerar:disabled {
+   background-color: gray;
+   border-color: grey;
+   color: black;
+
+}
+
+.Form #ButtonsBoard {
+   margin-bottom: 10px;
+}
+
+.Form #ButtonsBoard input {
+   height: 20px;
+   width: auto;
+   font-family: 'Roboto', sans-serif;
+   font-size: 0.5rem;
+   text-transform: uppercase;
+   letter-spacing: 2.5px;
+   font-weight: 500;
+   background-color: #0a3ba3;
+   color: #d4fcfc;
+   border: none;
+   border-radius: 45px;
+   box-shadow: 0px 8px 15px #2c54f20e;
+   transition: all 0.3s ease 0s;
+   cursor: pointer;
+   outline: none;
+
+}
+
+.Form #ButtonsBoard input:hover {
+   background-color: #2c54f2;
+   box-shadow: 0px 15px 20px #87f8f61f;
+   color: white;
+   transform: translateY(-7px);
+}
+
+#GenerateFormBoard {
+   margin-top: 5px;
+   width: 100%;
+   height: fit-content;
+   overflow: hidden;
+
 }
 
 
