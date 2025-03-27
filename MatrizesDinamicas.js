@@ -45,11 +45,11 @@ function ChecarStatus(Verdade, IdBotao) {
       document.getElementById("InputLinha").disabled = !Verdade;
       document.getElementById("InputColuna").disabled = !Verdade;
    }
-   if(IdBotao=='BotaoEnviar'){
+   if (IdBotao == 'BotaoEnviar') {
       document.getElementById("InputLinha").disabled = !Verdade;
       document.getElementById("InputColuna").disabled = !Verdade;
-      
-      
+
+
 
    }
 
@@ -60,7 +60,7 @@ function ChecarCampos() {
    const IdFormulario = "Formulario";
    var CamposVazios = 0;
    var QuantidadeCampos = document.querySelectorAll(ClasseCampos);
-   
+
 
    for (let CampoValor = 1; CampoValor <= QuantidadeCampos.length; CampoValor++) {
       var CampoAtual = document.getElementById(`Input${CampoValor}`).value
@@ -78,10 +78,10 @@ function ChecarCampos() {
       var VariavelEscalar = parseFloat(prompt("Insira um número Real: "));
       document.getElementById("Variavel").value = VariavelEscalar;
       if (document.getElementById("Variavel").value != 'NaN') {
-         Verdade=true;
+         Verdade = true;
          ChecarStatus(Verdade, "BotaoEnviar")
-        document.getElementById(IdFormulario).submit();
-        LimparTela();
+         document.getElementById(IdFormulario).submit();
+         LimparTela();
       }
 
    }
