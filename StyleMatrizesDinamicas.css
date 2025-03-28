@@ -86,7 +86,8 @@ body {
 }
 
 #BorderMid {
-   margin-top: 1.1rem;;
+   margin-top: 1.1rem;
+   ;
    height: 87%;
    width: 100%;
    overflow: auto;
@@ -184,6 +185,7 @@ body {
       border-right-color: transparent;
    }
 }
+
 @media only screen and (max-width: 600px) {
    html {
       font-size: 14px;
@@ -194,26 +196,30 @@ body {
       height: 350px;
    }
 }
+
 @media only screen and (min-width: 600px) {
    html {
       font-size: 18px;
    }
+
    .FocusBoard {
       width: 400px;
       height: 450px;
    }
-   
+
 }
+
 @media only screen and (min-width: 768px) {
    html {
       font-size: 18px;
    }
 
    .FocusBoard {
-      width:400px;
+      width: 400px;
       height: 450px;
    }
 }
+
 @media only screen and (min-width: 992px) {
    html {
       font-size: 18px;
@@ -224,6 +230,7 @@ body {
       height: 450px;
    }
 }
+
 @media only screen and (min-width: 1200px) {
    html {
       font-size: 18px;
@@ -231,48 +238,44 @@ body {
 
    .FocusBoard {
       width: 400px;
-      height:450px;
+      height: 450px;
       border-radius: 5%;
    }
-   
+
    .Form #BotaoGerar {
       height: 1rem;
    }
 
    .Form #ButtonsBoard input {
       height: 1rem;
-   
+
    }
-   .Form #ButtonsBoard{
+
+   .Form #ButtonsBoard {
       margin-bottom: 1rem;
    }
 }
+
 /*Media querie especificas para alguns dispositivos moveis(celulares) na orientacao landscape*/
-@media only screen and 
-(width:667px) and (height: 375px), 
+@media only screen and (width:667px) and (height: 375px),
 (width:896px) and (height: 414px),
 (width:844px) and (height: 390px),
 (width:932px) and (height: 430px),
 (width:915px) and (height: 412px),
 (width:740px) and (height: 360px),
-(width:914px) and (height: 412px)
-
-
-
-
-
-{
-   html{
+(width:914px) and (height: 412px) {
+   html {
       font-size: 12px;
    }
-   .FocusBoard{
+
+   .FocusBoard {
       height: calc(100% - 20%);
       width: calc(100% - 60%);
    }
 }
 
 /*Media querie especifica para ipad mini na orientacao landscape*/
-@media only screen and (width:1024px) and (height: 768px){
+@media only screen and (width:1024px) and (height: 768px) {
    html {
       font-size: 18px;
    }
@@ -283,104 +286,122 @@ body {
    }
 
 }
+
 /*Media querie especifica para ipad air na orientacao landscape*/
-@media only screen and (width:1180px) and (height: 820px){
-   html{
+@media only screen and (width:1180px) and (height: 820px) {
+   html {
       font-size: 18px;
    }
-   .FocusBoard{
+
+   .FocusBoard {
       width: 400px;
       height: 450px;
    }
 }
+
 /*Media querie especifica para ipad pro na orientacao landscape*/
-@media only screen and (width:1366px) and (height: 1024px){
-   html{
+@media only screen and (width:1366px) and (height: 1024px) {
+   html {
       font-size: 18px;
    }
-   .FocusBoard{
+
+   .FocusBoard {
       width: 400px;
       height: 450px;
    }
 }
+
 /*Media querie especifica para Surface pro 7 na orientacao landscape*/
-@media only screen and (width:1368px) and (height: 912px){
-   html{
+@media only screen and (width:1368px) and (height: 912px) {
+   html {
       font-size: 20px;
    }
-   .FocusBoard{
+
+   .FocusBoard {
       width: 500px;
       height: 550px;
    }
 }
+
 /*Media querie especifica para Surface Duo na orientacao landscape*/
-@media only screen and (width:720px) and (height: 540px){
-   html{
+@media only screen and (width:720px) and (height: 540px) {
+   html {
       font-size: 18px;
    }
-   .FocusBoard{
+
+   .FocusBoard {
       width: 400px;
       height: 450px;
    }
 }
-@media only screen and (width:1114px) and (height: 720px){
-   html{
+
+@media only screen and (width:1114px) and (height: 720px) {
+   html {
       font-size: 18px;
    }
-   
-   .FocusBoard{
+
+   .FocusBoard {
       width: 400px;
       height: 450px;
    }
 }
+
 /*Media querie especifica para Galaxy Z Fold5 na orientacao folded landscape*/
-@media only screen and (width:829px) and (height: 690px){
-   html{
+@media only screen and (width:829px) and (height: 690px) {
+   html {
       font-size: 18px;
    }
-   
-   .FocusBoard{
+
+   .FocusBoard {
       width: 400px;
       height: 450px;
    }
 }
+
 /*Media querie especifica para Galaxy Z Fold5 na orientacao continuous landscape*/
-@media only screen and (width:882px) and (height: 344px){
-   html{
+@media only screen and (width:882px) and (height: 344px) {
+   html {
       font-size: 12px;
    }
-   
-   .FocusBoard{
+
+   .FocusBoard {
       width: 300px;
       height: 300px;
    }
 }
+
 /*Media querie especifica para Asus Zenbook Fold na orientacao continuous landscape*/
-@media only screen and (width:1280px) and (height: 853px){
-   html{
+@media only screen and (width:1280px) and (height: 853px) {
+   html {
       font-size: 20px;
    }
-   .FocusBoard{
+
+   .FocusBoard {
       width: 500px;
       height: 550px;
    }
-}  
+}
+
 /*Media querie especifica para Asus Zenbook Fold na orientacao folded portrait*/
-@media only screen and (width:1280px) and (height:1706px){
-   html{
+@media only screen and (width:1280px) and (height:1706px) {
+   html {
       font-size: 40px;
    }
-   .FocusBoard{
+
+   .FocusBoard {
       width: 1000px;
       height: 1050px;
    }
 
-}/*Media querie especifica para Asus Zenbook Fold na orientacao folded landscape*/
-@media only screen and (width:1706px) and (height:1280px){
-   html{
+}
+
+/*Media querie especifica para Asus Zenbook Fold na orientacao folded landscape*/
+@media only screen and (width:1706px) and (height:1280px) {
+   html {
       font-size: 40px;
    }
-   .FocusBoard{
+
+   .FocusBoard {
       width: 1000px;
       height: 1050px;
    }
