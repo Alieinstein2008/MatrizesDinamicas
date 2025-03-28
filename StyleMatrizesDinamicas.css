@@ -248,3 +248,128 @@ body {
    }
 }
 
+@media only screen and (orientation:landscape){
+   html{
+      font-size: 12px;
+   }
+   .FocusBoard{
+      height: calc(100% - 20%);
+      width: calc(100% - 60%);
+   }
+}
+
+/*Media querie especifica para ipad mini na orientacao landscape*/
+@media screen and (width:1024px) and (height: 768px){
+   html {
+      font-size: 18px;
+   }
+
+   .FocusBoard {
+      width: 400px;
+      height: 450px;
+   }
+
+}
+/*Media querie especifica para ipad air na orientacao landscape*/
+@media screen and (width:1180px) and (height: 820px){
+   html{
+      font-size: 18px;
+   }
+   .FocusBoard{
+      width: 400px;
+      height: 450px;
+   }
+}
+/*Media querie especifica para ipad pro na orientacao landscape*/
+@media screen and (width:1366px) and (height: 1024px){
+   html{
+      font-size: 18px;
+   }
+   .FocusBoard{
+      width: 400px;
+      height: 450px;
+   }
+}
+/*Media querie especifica para Surface pro 7 na orientacao landscape*/
+@media screen and (width:1368px) and (height: 912px){
+   html{
+      font-size: 20px;
+   }
+   .FocusBoard{
+      width: 500px;
+      height: 550px;
+   }
+}
+/*Media querie especifica para Surface Duo na orientacao landscape*/
+@media screen and (width:720px) and (height: 540px){
+   html{
+      font-size: 18px;
+   }
+   .FocusBoard{
+      width: 400px;
+      height: 450px;
+   }
+}
+@media screen and (width:1114px) and (height: 720px){
+   html{
+      font-size: 18px;
+   }
+   
+   .FocusBoard{
+      width: 400px;
+      height: 450px;
+   }
+}
+/*Media querie especifica para Galaxy Z Fold5 na orientacao folded landscape*/
+@media screen and (width:829px) and (height: 690px){
+   html{
+      font-size: 18px;
+   }
+   
+   .FocusBoard{
+      width: 400px;
+      height: 450px;
+   }
+}
+/*Media querie especifica para Galaxy Z Fold5 na orientacao continuous landscape*/
+@media screen and (width:882px) and (height: 344px){
+   html{
+      font-size: 12px;
+   }
+   
+   .FocusBoard{
+      width: 300px;
+      height: 300px;
+   }
+}
+/*Media querie especifica para Asus Zenbook Fold na orientacao continuous landscape*/
+@media screen and (width:1280px) and (height: 853px){
+   html{
+      font-size: 20px;
+   }
+   .FocusBoard{
+      width: 500px;
+      height: 550px;
+   }
+}  
+/*Media querie especifica para Asus Zenbook Fold na orientacao folded portrait*/
+@media screen and (width:1280px) and (height:1706px){
+   html{
+      font-size: 40px;
+   }
+   .FocusBoard{
+      width: 1000px;
+      height: 1050px;
+   }
+
+}/*Media querie especifica para Asus Zenbook Fold na orientacao folded landscape*/
+@media screen and (width:1706px) and (height:1280px){
+   html{
+      font-size: 40px;
+   }
+   .FocusBoard{
+      width: 1000px;
+      height: 1050px;
+   }
+
+}
