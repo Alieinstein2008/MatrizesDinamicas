@@ -1,14 +1,13 @@
 
 function GerarCamposMatriz() {
-   var Verdade = false
    const IdBotao = ("BotaoGerar");
-   ChecarStatus(Verdade, IdBotao);
-   var ReferenciaLinha = 1;
-   var ReferenciaColuna = 1;
+   ChecarStatus(false, IdBotao);
+   let ReferenciaLinha = 1;
+   let ReferenciaColuna = 1;
 
-   var InputLinhas = parseInt(document.getElementById("InputLinha").value);
-   var InputColunas = parseInt(document.getElementById("InputColuna").value);
-   var QuantidadeInputs = InputLinhas * InputColunas;
+   let InputLinhas = parseInt(document.getElementById("InputLinha").value);
+   let InputColunas = parseInt(document.getElementById("InputColuna").value);
+   let QuantidadeInputs = InputLinhas * InputColunas;
    for (let CampoValor = 1; CampoValor <= QuantidadeInputs; CampoValor++) {
       if (ReferenciaColuna > InputColunas) {
          ReferenciaColuna = 1;
@@ -28,15 +27,14 @@ function LimparTela() {
    const LocalClasseAlvo = ".GenerateForm";
    const IdBotaoLimpar = ("BotaoLimpar");
    const idBotaoEnviar = ("BotaoEnviar");
-   var ElementosAlvos = document.querySelectorAll(LocalClasseAlvo);
+   let ElementosAlvos = document.querySelectorAll(LocalClasseAlvo);
    for (let Elements = 0; Elements < ElementosAlvos.length; Elements++) {
       ElementosAlvos[Elements].remove();
    }
 
    document.getElementById(idBotaoEnviar).remove();
    document.getElementById(IdBotaoLimpar).remove();
-   Verdade = true;
-   ChecarStatus(Verdade, "BotaoGerar")
+   ChecarStatus(true, "BotaoGerar")
 }
 
 function ChecarStatus(Verdade, IdBotao) {
@@ -58,31 +56,34 @@ function ChecarStatus(Verdade, IdBotao) {
 function ChecarCampos() {
    const ClasseCampos = ".GenerateForm";
    const IdFormulario = "Formulario";
-   var CamposVazios = 0;
-   var QuantidadeCampos = document.querySelectorAll(ClasseCampos);
+   const IdNumeroReal = "Variavel";
+   let CamposVazios = 0;
+   let QuantidadeCampos = document.querySelectorAll(ClasseCampos);
 
 
    for (let CampoValor = 1; CampoValor <= QuantidadeCampos.length; CampoValor++) {
-      var CampoAtual = document.getElementById(`Input${CampoValor}`).value
+      let CampoAtual = document.getElementById(`Input${CampoValor}`).value
       if (CampoAtual == '') {
          CamposVazios++
       }
    }
-   if (CamposVazios == 1) {
-      alert(`Existe ${CamposVazios} campo vazio preencha-o antes de continuar! `)
-   }
-   if (CamposVazios > 1) {
-      alert(`Existem ${CamposVazios} campos vazios preencha-os antes de continuar! `)
-   }
-   if (CamposVazios == 0) {
-      var VariavelEscalar = parseFloat(prompt("Insira um número Real: "));
-      document.getElementById("Variavel").value = VariavelEscalar;
-      if (document.getElementById("Variavel").value != 'NaN') {
-         Verdade = true;
-         ChecarStatus(Verdade, "BotaoEnviar")
-         document.getElementById(IdFormulario).submit();
-         LimparTela();
-      }
+   switch (CamposVazios) {
+      case 1:
+         alert(`Existe ${CamposVazios} campo vazio preencha-o antes de continuar!! `);
+         break;
+      case 0:
+         let VariavelEscalar = parseFloat(prompt("Insira um número Real: "));
+         document.getElementById(IdNumeroReal).value = VariavelEscalar;
+         if (document.getElementById(IdNumeroReal).value != 'NaN') {
+            ChecarStatus(true, "BotaoEnviar")
+            document.getElementById(IdFormulario).submit();
+            LimparTela();
+         }
+         break;
 
    }
+   if (CamposVazios > 1) {
+      alert(`Existem ${CamposVazios} campos vazios preencha-os antes de continuar!! `)
+   }
+
 }
