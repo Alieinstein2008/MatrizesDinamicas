@@ -26,3 +26,7 @@ Após inserir todos os dados necessários e clicar em 'ENVIAR', aparecerá um al
 Ao inserir o valor requisitado no alerta e clicar em 'OK', o usuário será redirecionado para uma tela contendo o resultado das operações feitas com PHP no Server-Side a partir dos dados obtidos no Client-Side:
 
 ![Screenshot inicial da interface do projeto](MatrizesDinamicasServer.jpg)
+
+## Observação:
+
+Infelizmente não é possivel deixar um link para que acessem essa aplicaçõ online, já que no momenento não possuo nenhum construtor de sites que suportam PHP.
