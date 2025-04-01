@@ -29,4 +29,4 @@ Ao inserir o valor requisitado no alerta e clicar em 'OK', o usuário será redi
 
 ## Observação:
 
-Infelizmente não é possivel deixar um link para que acessem essa aplicaçõ online, já que no momenento não possuo nenhum construtor de sites que suportam PHP.
+Infelizmente não é possivel deixar um link para que acessem essa aplicação online, já que no momento não encontrei nenhum construtor de sites que dê suporte a PHP.
